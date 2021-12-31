@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArtistCard /> should render correctly 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.c1 {
+  min-height: 14rem;
+  position: relative;
+  width: 100%;
+  background: #f6f7f8;
+}
+
+.c2 {
+  object-fit: cover;
+  width: 100%;
+  height: 32rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  margin: 0.8rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #030517;
+  font-size: 2.8rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 0.8rem;
+  max-width: calc(100% - 2.5rem);
+}
+
+<a
+  class="c0"
+  href="artist/1"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Depeche Mode"
+      class="c2"
+      src="https://i.scdn.co/image/ab6761610000e5eb8ada6bad4c9b276b7fd24874"
+    />
+  </div>
+  <div
+    class="c3"
+  >
+    <span
+      class="c4"
+    >
+      Depeche Mode
+    </span>
+  </div>
+</a>
+`;
