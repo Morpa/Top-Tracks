@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TopTrack /> should render the heading 1`] = `
+.c4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  color: #FAFAFA;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 2.4rem;
+  position: relative;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  color: #FAFAFA;
+}
+
+.c3 svg {
+  width: 4rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  border-radius: 50%;
+  position: absolute;
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+}
+
+.c5 {
+  color: #FAFAFA;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+<article
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Just Can't Get Enough - 2006 Remaster"
+      class="c2"
+      src="https://i.scdn.co/image/ab67616d0000b27314ed850dd8267a90b436ac5d"
+    />
+    <div
+      class="c3"
+    >
+      <svg
+        aria-hidden="true"
+        class="c4"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"
+        />
+      </svg>
+    </div>
+  </div>
+  <a
+    class="c5"
+    href="https://open.spotify.com/track/0xuXRQJfxmdP6gvfDe2Z4L"
+  >
+    Just Can't Get Enough - 2006 Remaster
+  </a>
+</article>
+`;
