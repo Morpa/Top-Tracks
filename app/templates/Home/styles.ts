@@ -5,18 +5,11 @@ import * as ButtonStyles from '../../components/Button/styles'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 1rem;
-
     ${TextFieldStyles.Wrapper} {
-      margin-top: ${theme.spacings.medium};
+      margin: ${theme.spacings.small} 0;
     }
     ${ButtonStyles.Wrapper} {
-      margin-top: ${theme.spacings.medium};
+      margin: ${theme.spacings.xxsmall} auto ${theme.spacings.xsmall};
     }
   `}
 `
-
-export const Form = styled.form``

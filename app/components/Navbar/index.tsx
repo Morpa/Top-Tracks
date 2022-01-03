@@ -5,7 +5,9 @@ import * as S from './styles'
 const Navbar = () => (
   <S.Wrapper>
     <Link to="/">
-      <Heading size="huge">TOP TRACKS</Heading>
+      <Heading size="huge" lineBottom color="white" lineColor="secondary">
+        TOP TRACKS
+      </Heading>
     </Link>
   </S.Wrapper>
 )

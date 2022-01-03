@@ -3,12 +3,28 @@
 exports[`<Navbar /> should render the heading 1`] = `
 .c1 {
   color: #FAFAFA;
+  position: relative;
+  margin-bottom: 3.2rem;
   font-size: 5.2rem;
+}
+
+.c1::after {
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  content: '';
+  width: 5rem;
+  border-bottom: 0.5rem solid #3CD3C1;
 }
 
 .c0 {
   padding: 0.8rem;
   cursor: pointer;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 <nav

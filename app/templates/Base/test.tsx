@@ -24,14 +24,4 @@ describe('<Base />', () => {
       })
     ).toBeInTheDocument()
   })
-
-  it('should render the navbar when is passed', () => {
-    render(
-      <Base hasNavbar>
-        <h1>Content</h1>
-      </Base>
-    )
-
-    expect(screen.getByTestId('Mock NavBar')).toBeInTheDocument()
-  })
 })

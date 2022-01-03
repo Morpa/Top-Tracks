@@ -26,7 +26,7 @@ describe('<TextField />', () => {
 
   it('Changes its value when typing', async () => {
     const onInput = jest.fn()
-    render(<TextField onInput={onInput} name="TextField" />)
+    render(<TextField onInputChange={onInput} name="TextField" />)
 
     const input = screen.getByRole('textbox')
     const text = 'This is my new text'

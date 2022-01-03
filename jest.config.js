@@ -6,7 +6,8 @@ const fromRoot = (d) => path.join(__dirname, d)
 module.exports = {
   roots: [fromRoot('app')],
   resetMocks: true,
-  collectCoverageFrom: ['**/app/**/*.ts(x)?', '!**/app/**/stories.tsx'],
+  collectCoverageFrom: ['**/app/**/*.ts(x)?', '!**/app/**/stories.tsx','!**/app/**/root.tsx'],
+  collectCoverage: true,
   coverageThreshold: null,
   testEnvironment: 'jsdom',
   transform: {

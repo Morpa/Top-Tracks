@@ -15,7 +15,6 @@ import { ThemeProvider } from 'styled-components'
 import { StyleContext } from './context'
 import GlobalStyles from '~/styles/global'
 import theme from '~/styles/theme'
-import { Base } from './templates/Base'
 import { useNProgress } from './hooks/use-nprogress'
 import { NotFound } from './components/NotFound'
 import { ErrorPage } from './components/ErrorPage'
@@ -50,9 +49,7 @@ export default function App() {
 
   return (
     <Document>
-      <Layout>
-        <Outlet />
-      </Layout>
+      <Outlet />
     </Document>
   )
 }
@@ -112,8 +109,4 @@ function Document({
       </body>
     </html>
   )
-}
-
-function Layout({ children }: { children: React.ReactNode }) {
-  return <Base hasNavbar>{children}</Base>
 }
