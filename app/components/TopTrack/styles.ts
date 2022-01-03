@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.article`
   ${({ theme }) => css`
@@ -11,6 +12,11 @@ export const Wrapper = styled.article`
     text-decoration: none;
     padding: ${theme.spacings.small};
     position: relative;
+
+    ${media.lessThan('medium')`
+    justify-content: space-between;
+      padding: 0 ${theme.spacings.medium};
+    `}
   `}
 `
 
@@ -38,12 +44,25 @@ export const Image = styled.img`
   object-fit: cover;
   width: 12rem;
   height: 12rem;
+
+  ${media.lessThan('medium')`
+    width: 6rem;
+    height: 6rem;
+  `}
 `
 export const Link = styled.a`
   ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: ${theme.colors.white};
     text-decoration: none;
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.bold};
+
+    ${media.lessThan('medium')`
+      margin-left: ${theme.spacings.large};
+      font-size: ${theme.font.sizes.large};
+    `}
   `}
 `

@@ -70,11 +70,47 @@ exports[`<TopTrack /> should render the heading 1`] = `
 }
 
 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #FAFAFA;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 2.8rem;
   font-weight: 600;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 3.2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c5 {
+    margin-left: 4.0rem;
+    font-size: 1.8rem;
+  }
 }
 
 <article

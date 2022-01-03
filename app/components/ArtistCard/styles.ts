@@ -22,7 +22,7 @@ export const ImageBox = styled.div`
 export const Image = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 32rem;
+  height: 19rem;
 `
 
 export const Content = styled.div`
@@ -42,8 +42,8 @@ export const Info = styled.span`
     color: ${theme.colors.black};
     font-size: ${theme.font.sizes.xxlarge};
     align-items: center;
-    justify-content: flex-end;
-    margin-top: ${theme.spacings.xxsmall};
+    justify-content: center;
+    margin-top: ${theme.spacings.medium};
     max-width: calc(100% - 2.5rem);
   `}
 `

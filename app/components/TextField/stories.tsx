@@ -10,7 +10,7 @@ export default {
     name: 'search',
     icon: <Search />,
     initialValue: '',
-    placeholder: 'Search artirs...'
+    placeholder: 'Search artist...'
   },
   argTypes: {
     onInput: { action: 'changed' },

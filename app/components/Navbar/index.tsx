@@ -1,14 +1,11 @@
 import { Link } from 'remix'
+import { Heading } from '../Heading'
 import * as S from './styles'
 
 const Navbar = () => (
   <S.Wrapper>
     <Link to="/">
-      <img
-        src="/img/logo.png"
-        alt="Um círculo com as cores do Brasil"
-        aria-label="frontend-br"
-      />
+      <Heading size="huge">TOP TRACKS</Heading>
     </Link>
   </S.Wrapper>
 )

@@ -115,5 +115,5 @@ function Document({
 }
 
 function Layout({ children }: { children: React.ReactNode }) {
-  return <Base>{children}</Base>
+  return <Base hasNavbar>{children}</Base>
 }

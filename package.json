@@ -23,6 +23,7 @@
     "@remix-run/serve": "^1.1.1",
     "@styled-icons/ionicons-solid": "^10.34.0",
     "@styled-icons/material-outlined": "^10.34.0",
+    "dotenv": "^10.0.0",
     "framer-motion": "^5.5.5",
     "lodash.pick": "^4.4.0",
     "lodash.xor": "^4.5.0",
