@@ -7,7 +7,9 @@ describe('<Navbar />', () => {
     const { container } = render(<Navbar />, { wrapper: MemoryRouter })
 
     expect(
-      screen.getByRole('img', { name: /frontend-br/i })
+      screen.getByRole('heading', {
+        name: /top tracks/i
+      })
     ).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()

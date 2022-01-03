@@ -1,13 +1,16 @@
-import { render, screen } from '@testing-library/react'
-
-import Home from '.'
+import { render, screen } from '~/utils/test-utils'
+import { Home } from '.'
 
 describe('<Home />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Home />)
+    render(<Home />)
 
-    expect(screen.getByRole('heading', { name: /Home/i })).toBeInTheDocument()
+    expect(screen.getByRole('textbox')).toBeInTheDocument()
 
-    expect(container.firstChild).toMatchSnapshot()
+    expect(
+      screen.getByRole('button', {
+        name: /search/i
+      })
+    ).toBeInTheDocument()
   })
 })

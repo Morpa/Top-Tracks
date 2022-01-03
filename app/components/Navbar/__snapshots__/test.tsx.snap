@@ -1,13 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Navbar /> should render the heading 1`] = `
+.c1 {
+  color: #FAFAFA;
+  font-size: 5.2rem;
+}
+
 .c0 {
   padding: 0.8rem;
   cursor: pointer;
-}
-
-.c0 img {
-  height: 8rem;
 }
 
 <nav
@@ -16,11 +17,12 @@ exports[`<Navbar /> should render the heading 1`] = `
   <a
     href="/"
   >
-    <img
-      alt="Um círculo com as cores do Brasil"
-      aria-label="frontend-br"
-      src="/img/logo.png"
-    />
+    <h2
+      class="c1"
+      color="white"
+    >
+      TOP TRACKS
+    </h2>
   </a>
 </nav>
 `;
