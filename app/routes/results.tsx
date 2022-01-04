@@ -1,23 +1,23 @@
-import { LoaderFunction, json, useLoaderData, Link } from 'remix'
+import { LoaderFunction, json, useLoaderData } from 'remix'
 import { ArtistCard } from '~/components/ArtistCard'
 import { Grid } from '~/components/Grid'
-import { getSearch } from '~/services/spotify/Spotify.api'
-import { SearchResult } from '~/services/spotify/Spotify.types'
+import { SpotifyApi } from '~/services/spotify'
+import { Types } from '~/services/spotify'
 import { Base } from '~/templates/Base'
 
 export const loader: LoaderFunction = async ({ request }) => {
   const search = new URL(request.url).searchParams
-  const result = await getSearch(search.get('query'))
+  const result = await SpotifyApi.getSearch(search.get('query'))
 
   return json(result)
 }
 
 export default function () {
-  const data = useLoaderData<SearchResult>()
+  const { artists } = useLoaderData<Types.SearchResult>()
   return (
     <Base>
       <Grid>
-        {data.artists.items
+        {artists.items
           .filter(
             (artist) => artist.images.length > 0 && artist.popularity > 10
           )
