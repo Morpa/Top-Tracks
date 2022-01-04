@@ -10,9 +10,15 @@ type Artists = {
   images: Image[]
   popularity: number
 }
+export namespace Artists {
+  export type LoaderData = {
+    id: string
+    name: string
+    images: Image[]
+    popularity: number
+  }
+}
 
 export type SearchResult = {
-  artists: {
-    items: Artists[]
-  }
+  items: Artists[]
 }

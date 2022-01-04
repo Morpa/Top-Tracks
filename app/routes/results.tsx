@@ -13,11 +13,12 @@ export const loader: LoaderFunction = async ({ request }) => {
 }
 
 export default function () {
-  const { artists } = useLoaderData<Types.SearchResult>()
+  const data = useLoaderData<Types.Artists.LoaderData[]>()
+
   return (
     <Base>
       <Grid>
-        {artists.items
+        {data
           .filter(
             (artist) => artist.images.length > 0 && artist.popularity > 10
           )

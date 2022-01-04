@@ -1,7 +1,11 @@
+import { pick } from 'lodash'
+import invariant from 'tiny-invariant'
 import { getToken } from '~/utils/auth'
+import { Types } from '.'
 
 const request = async (url: URL) => {
   const token = await getToken()
+  invariant(url, 'Please provide an url as a string')
 
   const response = await fetch(url.toString(), {
     headers: {
@@ -19,7 +23,11 @@ export const getSearch = async (query: string | null) => {
   })
   const url = new URL(`https://api.spotify.com/v1/search?${search}`)
 
-  return await request(url)
+  const { artists } = await request(url)
+
+  return artists.items.map((artist: Types.SearchResult) =>
+    pick(artist, ['id', 'name', 'images', 'popularity'])
+  )
 }
 
 export const getTopTracks = async (id: string) => {
