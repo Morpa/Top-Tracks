@@ -30,15 +30,11 @@ exports[`<Navbar /> should render the heading 1`] = `
 <nav
   class="c0"
 >
-  <a
-    href="/"
+  <h2
+    class="c1"
+    color="white"
   >
-    <h2
-      class="c1"
-      color="white"
-    >
-      TOP TRACKS
-    </h2>
-  </a>
+    TOP TRACKS
+  </h2>
 </nav>
 `;

@@ -18,6 +18,7 @@ import theme from '~/styles/theme'
 import { useNProgress } from './hooks/use-nprogress'
 import { NotFound } from './components/NotFound'
 import { ErrorPage } from './components/ErrorPage'
+import { Base } from './templates/Base'
 
 export const meta: MetaFunction = () => {
   return { title: 'Remix Backend BR' }
@@ -58,7 +59,9 @@ export function ErrorBoundary({ error }: { error: Error }) {
   console.error(error)
   return (
     <Document title="Error!">
-      <ErrorPage />
+      <Base>
+        <ErrorPage />
+      </Base>
     </Document>
   )
 }
@@ -68,7 +71,9 @@ export function CatchBoundary() {
 
   return (
     <Document title={`${caught.statusText}`}>
-      <NotFound />
+      <Base>
+        <NotFound />
+      </Base>
     </Document>
   )
 }

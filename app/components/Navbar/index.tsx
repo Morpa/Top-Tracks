@@ -1,15 +1,10 @@
-import { Link } from 'remix'
 import { Heading } from '../Heading'
 import * as S from './styles'
 
-const Navbar = () => (
+export const Navbar = () => (
   <S.Wrapper>
-    <Link to="/">
-      <Heading size="huge" lineBottom color="white" lineColor="secondary">
-        TOP TRACKS
-      </Heading>
-    </Link>
+    <Heading size="huge" lineBottom color="white" lineColor="secondary">
+      TOP TRACKS
+    </Heading>
   </S.Wrapper>
 )
-
-export default Navbar

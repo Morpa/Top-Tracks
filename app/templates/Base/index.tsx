@@ -1,5 +1,5 @@
 import { Container } from '~/components/Container'
-import Navbar from '~/components/Navbar'
+import { Navbar } from '~/components/Navbar'
 
 export type BaseTemplateProps = {
   children: React.ReactNode
