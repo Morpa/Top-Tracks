@@ -3,8 +3,10 @@ import styled, { css } from 'styled-components'
 export const Wrapper = styled.nav`
   ${({ theme }) => css`
     padding: ${theme.spacings.xxsmall};
-    a {
-      text-decoration: none;
-    }
   `}
+`
+
+export const Link = styled.a`
+  text-decoration: none;
+  cursor: pointer;
 `

@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Navbar /> should render the heading 1`] = `
-.c1 {
+.c2 {
   color: #FAFAFA;
   position: relative;
   margin-bottom: 3.2rem;
   font-size: 5.2rem;
 }
 
-.c1::after {
+.c2::after {
   position: absolute;
   left: 0;
   bottom: -1rem;
@@ -21,19 +21,25 @@ exports[`<Navbar /> should render the heading 1`] = `
   padding: 0.8rem;
 }
 
-.c0 a {
+.c1 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 <nav
   class="c0"
 >
-  <h2
+  <a
     class="c1"
-    color="white"
+    href="/"
   >
-    TOP TRACKS
-  </h2>
+    <h2
+      class="c2"
+      color="white"
+    >
+      TOP TRACKS
+    </h2>
+  </a>
 </nav>
 `;

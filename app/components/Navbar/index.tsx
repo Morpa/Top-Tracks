@@ -3,8 +3,10 @@ import * as S from './styles'
 
 export const Navbar = () => (
   <S.Wrapper>
-    <Heading size="huge" lineBottom color="white" lineColor="secondary">
-      TOP TRACKS
-    </Heading>
+    <S.Link href="/">
+      <Heading size="huge" lineBottom color="white" lineColor="secondary">
+        TOP TRACKS
+      </Heading>
+    </S.Link>
   </S.Wrapper>
 )
