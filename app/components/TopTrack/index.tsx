@@ -41,7 +41,13 @@ export const TopTrack = ({
     <S.Wrapper>
       <S.ImageWrapper onClick={handlePlay}>
         <S.Image src={image_url} alt={title} />
-        <S.IconsWrapper>{playing ? <Pause /> : <Play />}</S.IconsWrapper>
+        <S.IconsWrapper>
+          {playing ? (
+            <Pause aria-label="Pause Button" />
+          ) : (
+            <Play aria-label="Play Button" />
+          )}
+        </S.IconsWrapper>
       </S.ImageWrapper>
       <S.Link href={external_urls.spotify}>{title}</S.Link>
     </S.Wrapper>

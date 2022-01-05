@@ -21,7 +21,11 @@ import { ErrorPage } from './components/ErrorPage'
 import { Base } from './templates/Base'
 
 export const meta: MetaFunction = () => {
-  return { title: 'Remix Backend BR' }
+  return {
+    title: 'Top Tracks',
+    description: 'An searcher for top tracks',
+    viewport: 'width=device-width, initial-scale=1'
+  }
 }
 
 export const links: LinksFunction = () => {

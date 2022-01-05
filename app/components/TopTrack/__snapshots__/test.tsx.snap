@@ -110,6 +110,7 @@ exports[`<TopTrack /> should render the heading 1`] = `
     >
       <svg
         aria-hidden="true"
+        aria-label="Play Button"
         class="c4"
         fill="currentColor"
         focusable="false"

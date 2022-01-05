@@ -1,4 +1,4 @@
-import { json, LoaderFunction, useLoaderData } from 'remix'
+import { json, LoaderFunction, MetaFunction, useLoaderData } from 'remix'
 import { TopTracksGrid } from '~/components/TopTracksGrid'
 import { TopTrack } from '~/components/TopTrack'
 import { SpotifyApi, Types } from '~/services/spotify'
@@ -8,6 +8,12 @@ export const loader: LoaderFunction = async ({ params }) => {
   const tracks = await SpotifyApi.getTopTracks(params.id as string)
 
   return json(tracks)
+}
+
+export const meta: MetaFunction = () => {
+  return {
+    title: 'Top Tracks Results'
+  }
 }
 
 export default function () {
