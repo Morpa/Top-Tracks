@@ -6,12 +6,20 @@ const fromRoot = (d) => path.join(__dirname, d)
 module.exports = {
   roots: [fromRoot('app')],
   resetMocks: true,
-  collectCoverageFrom: ['**/app/**/*.ts(x)?', '!**/app/**/stories.tsx','!**/app/**/root.tsx'],
+  collectCoverageFrom: ['**/app/**/*.ts(x)?', '!**/app/**/stories.tsx','!**/app/routes/**','!**/app/services/**'],
   collectCoverage: true,
   coverageThreshold: null,
   testEnvironment: 'jsdom',
-  transform: {
-    '^.+\\.tsx?$': 'esbuild-jest'
+  "transform": {
+    "^.+\\.tsx?$": [
+      "esbuild-jest",
+      {
+        sourcemap: true,
+        loaders: {
+          '.spec.ts': 'tsx'
+        }
+      }
+    ]
   },
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   moduleNameMapper: {

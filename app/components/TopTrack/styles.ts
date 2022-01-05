@@ -1,21 +1,17 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.article`
+export const Wrapper = styled.li`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
     color: ${theme.colors.white};
     text-decoration: none;
-    padding: ${theme.spacings.small};
+    padding: ${theme.spacings.xxlarge};
     position: relative;
 
     ${media.lessThan('medium')`
-    justify-content: space-between;
-      padding: 0 ${theme.spacings.medium};
+      padding: ${theme.spacings.xsmall};
     `}
   `}
 `
@@ -29,13 +25,17 @@ export const IconsWrapper = styled.div`
 
     svg {
       width: 4rem;
+      cursor: pointer;
     }
   `}
 `
 export const ImageWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: ${theme.spacings.small};
+  `}
 `
 
 export const Image = styled.img`
@@ -52,17 +52,15 @@ export const Image = styled.img`
 `
 export const Link = styled.a`
   ${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: ${theme.colors.white};
     text-decoration: none;
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.bold};
+    margin-left: 10rem;
 
     ${media.lessThan('medium')`
       margin-left: ${theme.spacings.large};
-      font-size: ${theme.font.sizes.large};
+      font-size: ${theme.font.sizes.xsmall};
     `}
   `}
 `

@@ -8,7 +8,10 @@ export default {
     title: "Just Can't Get Enough - 2006 Remaster",
     image_url:
       'https://i.scdn.co/image/ab67616d0000b27314ed850dd8267a90b436ac5d',
-    spotify_url: 'https://open.spotify.com/track/0xuXRQJfxmdP6gvfDe2Z4L'
+    spotify_url: 'https://open.spotify.com/track/0xuXRQJfxmdP6gvfDe2Z4L',
+    external_urls: {
+      spotify: 'https://open.spotify.com/track/0xuXRQJfxmdP6gvfDe2Z4L'
+    }
   }
 } as Meta
 

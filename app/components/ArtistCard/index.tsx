@@ -7,7 +7,7 @@ export type ArtistCardProps = {
 }
 
 export const ArtistCard = ({ id, title, image_url }: ArtistCardProps) => (
-  <S.Wrapper href={`artist/${id}`}>
+  <S.Wrapper href={`/tracks/${id}`}>
     <S.ImageBox>
       <S.Image src={image_url} alt={title} />
     </S.ImageBox>

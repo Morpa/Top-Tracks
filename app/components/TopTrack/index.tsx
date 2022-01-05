@@ -8,9 +8,17 @@ export type TopTrackProps = {
   title: string
   image_url: string
   spotify_url: string
+  external_urls: {
+    spotify: string
+  }
 }
 
-export const TopTrack = ({ image_url, title, spotify_url }: TopTrackProps) => {
+export const TopTrack = ({
+  image_url,
+  title,
+  spotify_url,
+  external_urls
+}: TopTrackProps) => {
   const [playing, setPlaying] = useState(false)
 
   return (
@@ -19,7 +27,7 @@ export const TopTrack = ({ image_url, title, spotify_url }: TopTrackProps) => {
         <S.Image src={image_url} alt={title} />
         <S.IconsWrapper>{playing ? <Pause /> : <Play />}</S.IconsWrapper>
       </S.ImageWrapper>
-      <S.Link href={spotify_url}>{title}</S.Link>
+      <S.Link href={external_urls.spotify}>{title}</S.Link>
     </S.Wrapper>
   )
 }

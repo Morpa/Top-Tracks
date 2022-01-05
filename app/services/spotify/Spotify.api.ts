@@ -1,4 +1,4 @@
-import { pick } from 'lodash'
+import pick from 'lodash.pick'
 import invariant from 'tiny-invariant'
 import { getToken } from '~/utils/auth'
 import { Types } from '.'
@@ -38,5 +38,9 @@ export const getTopTracks = async (id: string) => {
     `https://api.spotify.com/v1/artists/${id}/top-tracks?${search}`
   )
 
-  return await request(url)
+  const { tracks } = await request(url)
+
+  return tracks.map((track: Types.TopTracks) =>
+    pick(track, ['id', 'name', 'external_urls', 'album', 'preview_url'])
+  )
 }

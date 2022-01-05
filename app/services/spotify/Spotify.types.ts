@@ -22,3 +22,31 @@ export namespace Artists {
 export type SearchResult = {
   items: Artists[]
 }
+
+type Album = {
+  images: Image[]
+}
+
+export type Tracks = {
+  name: string
+  preview_url: string
+  album: Album
+  spotify: string
+}
+
+export type TopTracks = {
+  items: Tracks[]
+}
+
+export namespace Tracks {
+  export type LoaderData = {
+    id: string
+    name: string
+    preview_url: string
+    album: Album
+    spotify: string
+    external_urls: {
+      spotify: string
+    }
+  }
+}

@@ -28,6 +28,6 @@ describe('<ArtistCard />', () => {
 
     expect(
       screen.getByRole('img', { name: props.title }).closest('a')
-    ).toHaveAttribute('href', `artist/${props.id}`)
+    ).toHaveAttribute('href', `/tracks/${props.id}`)
   })
 })
