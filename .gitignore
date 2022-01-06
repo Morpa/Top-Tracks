@@ -6,3 +6,7 @@ node_modules
 .env
 coverage
 api/_build
+
+# cypress
+cypress/screenshots
+cypress/videos
