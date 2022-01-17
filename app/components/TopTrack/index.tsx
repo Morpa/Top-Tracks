@@ -38,14 +38,14 @@ export const TopTrack = ({
   }
 
   return (
-    <S.Wrapper>
+    <S.Wrapper data-cy="top-track">
       <S.ImageWrapper onClick={handlePlay}>
         <S.Image src={image_url} alt={title} />
         <S.IconsWrapper>
           {playing ? (
-            <Pause aria-label="Pause Button" />
+            <Pause aria-label="Pause Button" data-cy="pause" />
           ) : (
-            <Play aria-label="Play Button" />
+            <Play aria-label="Play Button" data-cy="play" />
           )}
         </S.IconsWrapper>
       </S.ImageWrapper>
