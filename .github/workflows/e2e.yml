@@ -17,9 +17,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
-
-      - name: Build
-        run: yarn build
         env:
         SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
         SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
