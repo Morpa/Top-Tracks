@@ -13,8 +13,6 @@ jobs:
         with:
           node-version: 16.x
 
-      - uses: c-hive/gha-yarn-cache@v1
-
       - name: Install dependencies
         run: yarn install
 
