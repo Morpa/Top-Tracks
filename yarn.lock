@@ -2061,12 +2061,12 @@
     node-fetch "^2.6.1"
     source-map-support "^0.5.21"
 
-"@remix-run/node@1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.2.3.tgz#1fb681fb588f13abf21ecf0cf123771d848625c8"
-  integrity sha512-AYCHzK0Rl1uftEi0OILY9/U9UOTbKu1SwtfgnBbWIl/Cs5yLVuO+3DQL0boaiz2orFpNaIv2Z2M//m3S/hvcyQ==
+"@remix-run/node@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.4.3.tgz#73d1ade20df0f17e331fa4c0c980c56db1387e6e"
+  integrity sha512-2x3BQ2qrA1v4Viu+GYMNMxxflnT5QcyOsPNCNvLjLm4o1pODHxYmp+2TEcZRgDqSTXgA7PNYlsEgG0BN/T33QA==
   dependencies:
-    "@remix-run/server-runtime" "1.2.3"
+    "@remix-run/server-runtime" "1.4.3"
     "@types/busboy" "^0.3.1"
     "@types/node-fetch" "^2.5.12"
     "@web-std/file" "^3.0.0"
@@ -2108,18 +2108,6 @@
     set-cookie-parser "^2.4.8"
     source-map "^0.7.3"
 
-"@remix-run/server-runtime@1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-1.2.3.tgz#10881a3332b543d63c0ce7ff1f38fe84eba09576"
-  integrity sha512-3zOGoIjShoZQSpL9z4CUUexgnsjGczIBNnm1D5WNp2bQrG+WgFWnnMlzvQgoIRvKaHitWdH/DYlUL5QQv53tJA==
-  dependencies:
-    "@types/cookie" "^0.4.0"
-    cookie "^0.4.1"
-    jsesc "^3.0.1"
-    react-router-dom "^6.2.2"
-    set-cookie-parser "^2.4.8"
-    source-map "^0.7.3"
-
 "@remix-run/server-runtime@1.4.1":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-1.4.1.tgz#b3d0635c5f1b851b3b099307f9108c9efe1a9b3c"
@@ -2132,13 +2120,24 @@
     set-cookie-parser "^2.4.8"
     source-map "^0.7.3"
 
-"@remix-run/vercel@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@remix-run/vercel/-/vercel-1.2.3.tgz#b71a9e00bf4dc5de41880a59028aa99e1a93da40"
-  integrity sha512-PJ9S0/O3Z/Nhw3sGgNXkMkmeizCzqurWoVbdONlx3H9RT55VZ46ASJHEtjuEOeOIXVW+ahPpWgTsrZeLNyLsWw==
+"@remix-run/server-runtime@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-1.4.3.tgz#d9a76ea5ff00492ff9275e43bb099e69ac80010d"
+  integrity sha512-NgzoEAlIuZWv53oZRgxGz+jqkEtAa+veAuxlp5/UcZ/VhygpYIcfKwdx4eCOqJOi1TqILNWrh3cedEVvV0jccQ==
   dependencies:
-    "@remix-run/node" "1.2.3"
-    "@remix-run/server-runtime" "1.2.3"
+    "@types/cookie" "^0.4.0"
+    cookie "^0.4.1"
+    jsesc "^3.0.1"
+    react-router-dom "^6.2.2"
+    set-cookie-parser "^2.4.8"
+    source-map "^0.7.3"
+
+"@remix-run/vercel@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@remix-run/vercel/-/vercel-1.4.3.tgz#3fb4c52b13064bc7eb2d79277d8f50ff14b86357"
+  integrity sha512-ZNDmn/j8mU0rK+6VdMqZmWx50thlXtioNLJ0U6qic3hSFFr4vO1weRTUwRIFE3Gm3AxmmvcLxx581W2aTnReVQ==
+  dependencies:
+    "@remix-run/node" "1.4.3"
 
 "@rollup/pluginutils@^4.0.0":
   version "4.1.2"
