@@ -26,7 +26,7 @@
   "dependencies": {
     "@remix-run/react": "^1.5.1",
     "@remix-run/serve": "^1.7.3",
-    "@remix-run/vercel": "^1.5.1",
+    "@remix-run/vercel": "^1.7.4",
     "@styled-icons/ionicons-solid": "^10.34.0",
     "@styled-icons/material-outlined": "^10.34.0",
     "dotenv": "^16.0.1",
